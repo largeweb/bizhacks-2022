@@ -7,7 +7,7 @@ function HomeMenuUser() {
   return (
     <div>
         <h1>Home Page For User</h1>
-        <button>Test</button>
+        <button>Test Push</button>
         <button>Test</button>
         <button>Test</button>
         <button>Test</button>
