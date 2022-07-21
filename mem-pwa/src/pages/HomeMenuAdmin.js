@@ -3,10 +3,10 @@ import React from 'react';
 import "react-bootstrap"
 import '../App.css';
 
-function HomeMenu() {
+function HomeMenuAdmin() {
   return (
     <div>
-        <h1>Home Page</h1>
+        <h1>Home Page For Admin</h1>
         <button>Test</button>
         <button>Test</button>
         <button>Test</button>
@@ -15,4 +15,4 @@ function HomeMenu() {
   );
 }
 
-export default HomeMenu;
+export default HomeMenuAdmin;
