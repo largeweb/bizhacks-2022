@@ -20,8 +20,8 @@ function App() {
         : <HomeMenuUser />
       }
       {isAdmin
-        ? <button onClick={(e) => setIsAdmin(false)}>Switch to User</button>
-        : <button onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
+        ? <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button>
+        : <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
       }
       <Footer />
     </div>

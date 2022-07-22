@@ -6,11 +6,14 @@ import '../App.css';
 function HomeMenuAdmin() {
   return (
     <div>
-        <h1>Home Page For Admin</h1>
+        <div className='menuContainer'>
+        <button>Admin</button>
+        <button>Control 😎</button>
+      </div>
+      <div>
         <button>Test</button>
         <button>Test</button>
-        <button>Test</button>
-        <button>Test</button>
+      </div>
     </div>
   );
 }

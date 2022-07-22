@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+
+
+.menuButton {
+  width: 50%;
+  margin-left: 100%;
+  background: #2d87ee;
+  font-weight: bold;
+  font-size: 25px;
+  /* margin: auto; */
+  padding: 5px;
+  border-radius: 10%;
+  text-align: center;
+  width: 100px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.menuContainer {
+  width: 10%;
+  display: flex;
+  /* align-items:center; */
+  /* justify-content:center; */
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.switchButton {
+  width: 60%;
+  /* margin: auto; */
+  margin-left: 20%;
+  margin-top: 20px;
+  height: 30px;
+  color: rgb(227, 216, 216);
+  border-radius: 10%;
+  border: 3px solid #828282;
+  background: #2d87ee;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+  font-family: 'Courier New', Courier, monospace;
+}
