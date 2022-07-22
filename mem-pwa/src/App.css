@@ -39,31 +39,30 @@
 
 
 .menuButton {
-  width: 50%;
-  margin-left: 100%;
+  width: 48%;
   background: #2d87ee;
   font-weight: bold;
-  font-size: 25px;
-  /* margin: auto; */
-  padding: 5px;
-  border-radius: 10%;
+  font-size: 15px;
+  padding: 30px;
+  margin: 1%;
+  border-radius: 20%;
   text-align: center;
-  width: 100px;
   font-family: 'Courier New', Courier, monospace;
 }
 
 .menuContainer {
-  width: 10%;
-  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  /* display: ; */
   /* align-items:center; */
   /* justify-content:center; */
   font-family: 'Courier New', Courier, monospace;
 }
 
 .switchButton {
-  width: 60%;
+  width: 50%;
   /* margin: auto; */
-  margin-left: 20%;
+  margin-left: 25%;
   margin-top: 20px;
   height: 30px;
   color: rgb(227, 216, 216);
@@ -75,5 +74,18 @@
 }
 
 html {
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbarLabel {
+  font-size: large;
+  margin: 0% 5%;
+  font-weight: 700;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.navbarButton {
+  font-size: large;
+  font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
 }

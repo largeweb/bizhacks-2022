@@ -5,14 +5,14 @@ import '../App.css';
 
 function HomeMenuAdmin() {
   return (
-    <div>
-        <div className='menuContainer'>
-        <button>Admin</button>
-        <button>Control 😎</button>
+    <div className="menuContainer">
+      <div>
+        <button className={"menuButton"}>Admin</button>
+        <button className={"menuButton"}>Control 😎</button>
       </div>
       <div>
-        <button>Test</button>
-        <button>Test</button>
+        <button className={"menuButton"}>Test</button>
+        <button className={"menuButton"}>Test</button>
       </div>
     </div>
   );

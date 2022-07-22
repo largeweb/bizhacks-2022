@@ -6,12 +6,12 @@ import '../App.css';
 
 function HomeMenuUser() {
   return (
-    <div>
-        <div className="menuContainer">
+    <div className="menuContainer">
+        <div>
           <button className={"menuButton"}>User</button>
           <button className={"menuButton"}>Info</button>
         </div>
-        <div className="menuContainer">
+        <div>
           <button className={"menuButton"}>Test</button>
           <button className={"menuButton"}>Test</button>
         </div>
