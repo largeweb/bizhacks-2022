@@ -5,7 +5,7 @@ import '../App.css';
 
 function HomeMenuAdmin() {
   return (
-    <div className="menuContainer">
+    <div className="menuContainer" >
       <div>
         <button className={"menuButton"}>Admin</button>
         <button className={"menuButton"}>Control 😎</button>
