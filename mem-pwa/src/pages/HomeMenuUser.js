@@ -8,6 +8,7 @@ import {Link} from "react-router-dom";
 function HomeMenuUser() {
   return (
     <div className="menuContainer">
+      <h1 className='menuHeader'>User Menu</h1>
         <div>
           <Link to="/cubicle"><button className={"menuButton"}>Cubicle Select</button></Link>
           <button className={"menuButton"}>Info</button>

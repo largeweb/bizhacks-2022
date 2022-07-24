@@ -28,6 +28,7 @@ function App() {
             <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button>
           </div>
           : <div>
+            <p>🟢 Logged In</p>
             <p>User Account</p>
             <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
           </div>

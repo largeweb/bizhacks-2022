@@ -7,6 +7,7 @@ import '../App.css';
 function HomeMenuAdmin() {
   return (
     <div className="menuContainer" >
+      <h1 className='menuHeader'>Admin Menu</h1>
       <div>
           <Link to="/cubiclemanager"><button className={"menuButton"}>Cubicle Manager</button></Link>
         <button className={"menuButton"}>Control 😎</button>
