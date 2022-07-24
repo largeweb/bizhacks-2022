@@ -13,6 +13,7 @@ function CubiclePage() {
   <div>
       <Navbar />
 	  <p>Information about the Cubicle Page</p>
+	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
       <Footer />
   </div>
  )
