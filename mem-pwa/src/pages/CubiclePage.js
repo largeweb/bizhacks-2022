@@ -10,7 +10,7 @@ import Footer from "./Footer"
 
 function CubiclePage() {
  return (
-  <div>
+  <div className='homediv'>
       <Navbar />
 	  <p>Information about the Cubicle Page</p>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
