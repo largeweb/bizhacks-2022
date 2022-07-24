@@ -20,10 +20,19 @@ function App() {
         ? <HomeMenuAdmin />
         : <HomeMenuUser />
       }
-      {isAdmin
-        ? <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button>
-        : <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
-      }
+      <div className="switchdiv">
+        {isAdmin
+          ? <div>
+            <p>🟢 Logged In</p>
+            <p>🔑 Admin</p>
+            <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button>
+          </div>
+          : <div>
+            <p>User Account</p>
+            <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
+          </div>
+        }
+      </div>
       <Footer />
     </div>
   );

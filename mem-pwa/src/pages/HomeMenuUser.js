@@ -9,7 +9,7 @@ function HomeMenuUser() {
   return (
     <div className="menuContainer">
         <div>
-          <Link to="/cubicle"><button className={"menuButton"}>Cubicle Manager</button></Link>
+          <Link to="/cubicle"><button className={"menuButton"}>Cubicle Select</button></Link>
           <button className={"menuButton"}>Info</button>
         </div>
         <div>

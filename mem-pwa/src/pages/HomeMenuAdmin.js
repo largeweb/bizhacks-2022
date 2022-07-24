@@ -8,7 +8,7 @@ function HomeMenuAdmin() {
   return (
     <div className="menuContainer" >
       <div>
-          <Link to="/cubicle"><button className={"menuButton"}>Cubicle Manager</button></Link>
+          <Link to="/cubiclemanager"><button className={"menuButton"}>Cubicle Manager</button></Link>
         <button className={"menuButton"}>Control 😎</button>
       </div>
       <div>

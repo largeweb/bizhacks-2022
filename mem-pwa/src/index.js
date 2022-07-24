@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
 import CubiclePage from './pages/CubiclePage';
+import CubicleManager from './pages/CubicleManager';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -14,6 +15,7 @@ root.render(
       <Routes>
         <Route path="/" element={<App/>} />
         <Route path="/cubicle" element={<CubiclePage/>} />
+        <Route path="/cubiclemanager" element={<CubicleManager/>} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}

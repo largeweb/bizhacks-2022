@@ -5,11 +5,11 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark navcolor">
-      <a className="navbar-brand navbarLabel" href="#">
+      <a className="navbar-brand navbarLabel" href="/">
         Infosys
       </a>
 
-      <button
+      {/* <button
         className="navbar-toggler"
         type="button"
         data-toggle="collapse"
@@ -65,7 +65,7 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 };

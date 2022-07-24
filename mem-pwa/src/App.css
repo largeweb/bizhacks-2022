@@ -63,11 +63,11 @@
 }
 
 .switchButton {
-  width: 40%;
+  width: 90%;
   /* margin: auto; */
-  margin-left: 30%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-left: 5%;
+  /* margin-top: 10px; */
+  margin-bottom: 1%;
   /* height: 30px; */
   color: rgb(0, 0, 0);
   border-radius: 10%;
@@ -97,10 +97,29 @@
 }
 
 .footertype {
-  background: rgb(186, 216, 255);
+  background: rgb(220, 235, 255);
   padding-top: 10px;
 }
 
 .homediv {
   background-color: rgb(207, 228, 235);
+}
+
+.switchdiv {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 20%;
+  padding: 5%;
+  width: 60%;
+  height: 20%;
+  background-color: rgb(225, 255, 225);
+  border: 2px solid rgb(201, 201, 255);
+  border-radius: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1px;
 }
