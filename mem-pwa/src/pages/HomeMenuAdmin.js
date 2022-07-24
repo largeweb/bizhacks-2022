@@ -1,4 +1,5 @@
 import { Button } from 'bootstrap';
+import {Link} from "react-router-dom";
 import React from 'react';
 import "react-bootstrap"
 import '../App.css';
@@ -7,7 +8,7 @@ function HomeMenuAdmin() {
   return (
     <div className="menuContainer" >
       <div>
-        <button className={"menuButton"}>Admin</button>
+          <Link to="/cubicle"><button className={"menuButton"}>Cubicle Manager</button></Link>
         <button className={"menuButton"}>Control 😎</button>
       </div>
       <div>
