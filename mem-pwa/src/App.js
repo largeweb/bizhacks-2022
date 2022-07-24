@@ -14,7 +14,7 @@ function App() {
   const [isAdmin, setIsAdmin] = useState(false)
 
   return (
-    <div>
+    <div class="homediv">
       <Navbar />
       {isAdmin
         ? <HomeMenuAdmin />
