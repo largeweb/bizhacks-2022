@@ -40,14 +40,14 @@
 
 .menuButton {
   width: 48%;
-  background: #71aff7;
+  background: #b4d4fd;
   color: rgb(65, 65, 65);
   font-weight: bold;
   font-size: 15px;
   padding: 15px;
   margin: 1%;
   border-radius: 20%;
-  border: 2px solid #fffdec;
+  border: 3px solid #6b6ca8;
   text-align: center;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -58,8 +58,9 @@
   /* display: ; */
   /* align-items:center; */
   /* justify-content:center; */
-  background-color: rgb(226, 194, 255);
-  border: 5px solid #747474;
+  /* background-color: rgb(226, 194, 255); */
+  background-color: rgb(202, 197, 250);
+  border: 5px solid #7b70b4;
   border-radius: 10%;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px;
@@ -74,8 +75,8 @@
   /* height: 30px; */
   color: rgb(0, 0, 0);
   border-radius: 10%;
-  border: 3px solid #828282;
-  background: #95a7bd;
+  border: 3px solid #6765bb;
+  background: #92a6e6;
   font-size: 15px;
   font-weight: 700;
   font-family: 'Courier New', Courier, monospace;
@@ -106,7 +107,7 @@
 }
 
 .homediv {
-  background-color: rgb(207, 228, 235);
+  background-color: rgb(199, 216, 255);
 }
 
 .switchdiv {
@@ -116,8 +117,8 @@
   padding: 20px 5% 10px 5%;
   width: 60%;
   height: 20%;
-  background-color: rgb(164, 244, 255);
-  border: 5px solid #747474;
+  background-color: rgb(189, 195, 248);
+  border: 5px solid #8b81c5;
   /* border: 2px solid rgb(201, 201, 255); */
   border-radius: 10%;
   font-family: 'Courier New', Courier, monospace;
