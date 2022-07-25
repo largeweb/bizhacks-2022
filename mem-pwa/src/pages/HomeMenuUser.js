@@ -11,7 +11,7 @@ function HomeMenuUser() {
       <h1 className='menuHeader'>User Menu</h1>
         <div>
           <Link to="/cubicle"><button className={"menuButton"}>Cubicle Select</button></Link>
-          <button className={"menuButton"}>Info</button>
+          <Link to="/childcare"><button className={"menuButton"}>Child Care</button></Link>
         </div>
         <div>
           <button className={"menuButton"}>Test</button>

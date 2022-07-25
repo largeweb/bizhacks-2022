@@ -5,6 +5,7 @@ import './index.css';
 import App from './App';
 import CubiclePage from './pages/CubiclePage';
 import CubicleManager from './pages/CubicleManager';
+import ChildCarePage from './pages/ChildCarePage';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -16,6 +17,7 @@ root.render(
         <Route path="/" element={<App/>} />
         <Route path="/cubicle" element={<CubiclePage/>} />
         <Route path="/cubiclemanager" element={<CubicleManager/>} />
+        <Route path="/childcare" element={<ChildCarePage />} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
