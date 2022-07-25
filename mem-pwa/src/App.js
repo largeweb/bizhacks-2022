@@ -1,9 +1,9 @@
 import React from 'react';
 import './App.css';
-import Navbar from "./pages/Navbar"
+import Navbar from "./components/Navbar"
 import HomeMenuAdmin from "./pages/HomeMenuAdmin"
 import HomeMenuUser from "./pages/HomeMenuUser"
-import Footer from "./pages/Footer"
+import Footer from "./components/Footer"
 import {useState, useEffect} from "react"
 import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBFooter } from 'mdb-react-ui-kit';

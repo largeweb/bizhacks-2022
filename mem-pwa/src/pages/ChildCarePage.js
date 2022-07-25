@@ -5,11 +5,11 @@ import { Container } from 'react-bootstrap';
 import '../App.css';
 import {Link} from "react-router-dom";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
-import Navbar from "./Navbar"
-import Footer from "./Footer"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 import child1 from "../images/child1.jpeg"
 
-function CubiclePage() {
+function ChildCarePage() {
  return (
   <div className='homediv'>
       <Navbar />
@@ -23,4 +23,4 @@ function CubiclePage() {
  )
 }
 
-export default CubiclePage;
+export default ChildCarePage;

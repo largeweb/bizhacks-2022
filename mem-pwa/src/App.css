@@ -62,8 +62,8 @@
 .menuContainer {
   width: 80%;
   margin-left: 10%;
-  /* display: ; */
-  /* align-items:center; */
+  /* display: flex; */
+  /* align-items: center; */
   /* justify-content:center; */
   /* background-color: rgb(226, 194, 255); */
   background-color: var(--menu-color);

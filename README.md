@@ -69,3 +69,23 @@ npm run build
 serve -s build
 # If you get an error, try with npx
 npx serve -s build
+
+
+
+
+# What to add
+# Cubicle Page   Choose your campus (button for each campus)
+Button will display the birds eye view of the campus
+There will be a dropdown for building select
+choosing a building will bring you to the floor plan web page
+Admin chooses/edits floor plan image that he/she labels with easy numbers (1,2,3,etc)
+Underneath, he can specify the number of the cubicles
+The page will populate with buttons or dropdown, color coded with functions to reset, etc.
+
+USE A DATABASE
+
+# Child Care Page
+If you do not have a kid, you just have a basic information page & details
+two buttons at top, check in & register a child
+Check in page => based on a weekly, choose day & time & day
+Mention privacy & safety
