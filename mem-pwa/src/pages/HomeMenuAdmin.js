@@ -10,11 +10,11 @@ function HomeMenuAdmin() {
       <h1 className='menuHeader'>Admin Menu</h1>
       <div>
           <Link to="/cubiclemanager"><button className={"menuButton"}>Cubicle Manager</button></Link>
-        <button className={"menuButton"}>Control 😎</button>
+          <Link to="/childcaremanager"><button className={"menuButton"}>Child Care Manager</button></Link>
       </div>
       <div>
-        <button className={"menuButton"}>Test</button>
-        <button className={"menuButton"}>Test</button>
+          <Link to="/socialmanager"><button className={"menuButton"}>Social Holidays Manager</button></Link>
+          <Link to="/rdpmanager"><button className={"menuButton"}>RDP Manager</button></Link>
       </div>
     </div>
   );
