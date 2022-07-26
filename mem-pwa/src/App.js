@@ -9,6 +9,10 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBFooter } from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
 
+import fs from "fs"
+// import QuickDB from "quick.db"
+// const { QuickDB } = require("quick.db");
+
 function App() {
 
   const [isAdmin, setIsAdmin] = useState(false)

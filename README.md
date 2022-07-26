@@ -24,6 +24,7 @@
 
 # Requirements
 NodeJS Version 16 (LTS as of 7/21/2022)
+npm i -g node-gyp (not 100% sure, I used this for quick.db)
 
 
 
