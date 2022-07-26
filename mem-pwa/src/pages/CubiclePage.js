@@ -68,6 +68,8 @@ function CubiclePage() {
 	  <p>Information about the Cubicle Page</p>
 	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
 	  <div className='infonotice'>This page is not fully developed, but illustrates our concept for Employee Cubicle Selection</div>
+	  <div className='loginnotice'>Go to the Cubicle Manager (Login as Admin) to manage the floor assignments</div>
+	  <br></br>
 	  <div>Choose a Campus</div>
 	  <button disabled>Bangalore</button>
 	  {/* <p>{campus}</p> */}
@@ -83,8 +85,8 @@ function CubiclePage() {
 	  {/* <p>{floor}</p> */}
 
 
-	<button variant="contained" className='menuButton' onClick={addSeat}>Add Single Seat</button>
-	<button variant="contained" className='menuButton' onClick={addDouble}>Add Double Seat</button>
+	{/* <button variant="contained" className='menuButton' onClick={addSeat}>Add Single Seat</button>
+	<button variant="contained" className='menuButton' onClick={addDouble}>Add Double Seat</button> */}
 		<ul style={{display:"inline"}}>
 		{seats.map(({seat})=> <Seat style={{display:"inline"}}/*seat={seat}*/key={"single"} className='menuButton' />)}
 		</ul>

@@ -13,6 +13,7 @@ const DoubleSeat=({key})=>{
         // </List>
         <div className='doubleseatdiv'>
             {/* <div fontSize="large" style={{opacity:0.7, backgroundColor:"red"}} onClick={() => {deleteDoc(doc(db,'campuses',key))}} /> */}
+                <div>BA-AHD-00-D05</div>
                 <div>UNTAKEN</div>
                 <div>Date of Leave: 8/23/2022</div>
 

@@ -13,6 +13,7 @@ const Seat=()=>{
         // </List>
         <div className='seatdiv'>
             {/* <div fontSize="large" style={{opacity:0.7, backgroundColor:"red"}} onClick={() => {deleteDoc(doc(db,'campuses',key))}} /> */}
+                <div>BA-AHD-00-02</div>
                 <div>UNTAKEN</div>
                 <div>Date of Leave: 8/23/2022</div>
 
