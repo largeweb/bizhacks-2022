@@ -153,10 +153,19 @@ p {
 }
 
 .childcareTopDiv {
-  width: 75%;
+  width: 90%;
+  margin-left: 5%;
   text-align: center;
   padding: 10px;
   /* height: 100px; */
   border-radius: 10%;
   border: 2px solid var(--border-color);
+}
+
+.aboutdiv {
+  padding: 20px;
+  width: 90%;
+  margin-left: 5%;
+  background-color: var(--menu-color);
+  border-radius: 10%;
 }

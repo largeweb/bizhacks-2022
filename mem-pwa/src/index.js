@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import App from './App';
+import Login from './Login';
 import CubiclePage from './pages/CubiclePage';
 import CubicleManager from './pages/CubicleManager';
 import ChildCarePage from './pages/ChildCarePage';
@@ -21,6 +22,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App/>} />
+        <Route path="/app" element={<App/>} />
         <Route path="/cubicle" element={<CubiclePage/>} />
         <Route path="/cubiclemanager" element={<CubicleManager/>} />
         <Route path="/childcare" element={<ChildCarePage />} />
