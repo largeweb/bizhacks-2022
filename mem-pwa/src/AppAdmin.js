@@ -13,13 +13,13 @@ import useLocalStorage from "use-local-storage"
 
 function App() {
 
-  const [isAdmin, setIsAdmin] = useState(false)
+  const [isAdmin, setIsAdmin] = useState(true)
   const [userid, setUserid] = useLocalStorage([{'id':''}])
 
   return (
     <div class="homediv">
       <Navbar />
-      <HomeMenuUser />
+      <HomeMenuAdmin />
       {/* ⚠️ TRY TO ADMIN PROTECT THIS BUTTON ⚠️ */}
       {/* It makes sense to */}
 
@@ -43,18 +43,10 @@ function App() {
 
 
       <div className="switchdiv">
-        {/* <div>
           <p>🟢 Logged In</p>
           <p>🔑 Admin</p>
-          <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button>
-          <Link to={'/'}><button className={"switchButton"}>Log Out</button></Link>
-        </div> */}
-        <div>
-          <p>🟢 Logged In</p>
-          <p>User Account</p>
-          {/* <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button> */}
-          <Link to={'/'}><button className={"switchButton"} /*onClick={(e) => setIsAdmin(true) }*/>Log Out</button></Link>
-        </div>
+          {/* <button className={"switchButton"} onClick={(e) => setIsAdmin(false)}>Switch to User</button> */}
+          <Link to={'/'}><button className={"switchButton"} /*onClick={(e) => setIsAdmin(false) }*/>Log Out</button></Link>
       </div>
       <Footer />
     </div>

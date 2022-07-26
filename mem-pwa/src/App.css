@@ -192,3 +192,17 @@ p {
 .centeronly {
   text-align: center;
 }
+
+img {
+  width: 80%;
+  margin-left: 10%;
+  border: 5px solid var(--border-color);
+}
+
+.loginnotice {
+  color: red;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  opacity: 0.8;
+}

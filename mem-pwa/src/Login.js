@@ -9,16 +9,22 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { MDBFooter } from 'mdb-react-ui-kit';
 import {Link} from "react-router-dom";
 import { db } from "./firebase"
+import useLocalStorage from "use-local-storage"
 
 function Login() {
 
   const [isAdmin, setIsAdmin] = useState(false)
   const [user, setUser] = useState(false)
   const [input, setInput] = useState(false)
+  const [userid, setUserid] = useLocalStorage([{'id':input}])
 
   useEffect(() => {
 
   },[user]);
+
+  useEffect(() => {
+
+  },[userid]);
 
   return (
     <div class="homediv">
@@ -35,7 +41,11 @@ function Login() {
             <br></br>
             <span className='biggerfont centeronly'>Log in:</span>
             <input className='inputfield' onChange={(e) => setInput(e.target.value)} type="text" placeholder='infosys ID'></input>
-            <Link to={'/app'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID #{input}</button></Link>
+            {input==='0'
+              ? <Link to={'/appadmin'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID 0 (special admin)</button></Link>
+              : <Link to={'/app'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID #{input}</button></Link>
+            }
+            <span className='loginnotice'>(Use id of 0 to login to Admin)</span>
             {/* <Link to={input}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link> */}
           </div>
           {/* <div>
