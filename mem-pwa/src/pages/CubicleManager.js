@@ -10,13 +10,14 @@ import {useState, useEffect} from "react"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Campus from "../components/Campus"
 
 function CubicleManager() {
 	const [seats, setSeats] = useState([''])
 	const [floors, setFloors] = useState([''])
 	const [buildings, setBuildings] = useState([''])
 	const [campuses, setCampuses] = useState([''])
-	const [input, setInput] = useState('')
+	const [input, setInput] = useState('nothing')
 	const [selectedCampus, setSelectedCampus] = useState('')
 	const [selectedBuilding, setSelectedBuilding] = useState('')
 	const [selectedFloor, setSelectedFloor] = useState('')
@@ -32,7 +33,7 @@ function CubicleManager() {
 	console.log(input)
     e.preventDefault();
 	addDoc(collection(db,'seats'),{
-	   seat:input,
+	   seat: String(input),
 	   timestamp: serverTimestamp()
 	})
     // setSeats([...seats,input]);
@@ -72,9 +73,12 @@ function CubicleManager() {
 	console.log("Adding campus")
 	console.log(input)
     e.preventDefault();
-	setInput('testSet')
+	// setInput('newboyy')
+	console.log("GOING WITH: " + String(input))
+	// let campusName = input;
 	addDoc(collection(db,'campuses'),{
-		name: input
+		name: String(input),
+		timestamp: serverTimestamp()
 	})
     // setSeats([...seats,input]);
     setInput('')
@@ -93,7 +97,7 @@ function CubicleManager() {
 		{/* <button variant="contained" onClick={addSeat}>Add Seat</button> */}
 		 <h1>CAMPUSES</h1>
 			<ul>
-			{campuses.map(({campus})=> <div /*seat={seat}*/className='menuButton' />)}
+			{campuses.map(({campus}) => <Campus /*campus={campus}*/ className='menuButton' />)}
 			</ul>
 		 <h1>BUILDINGS</h1>
 			<ul>
