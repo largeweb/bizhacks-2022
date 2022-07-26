@@ -183,3 +183,12 @@ p {
 .biggerfont {
   font-size: 15px;
 }
+
+.loginbutton {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.centeronly {
+  text-align: center;
+}

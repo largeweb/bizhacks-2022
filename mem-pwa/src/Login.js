@@ -32,8 +32,10 @@ function Login() {
       <div className="switchdiv">
           <div>
             <span className='biggerfont'>🔴 Logged Out</span>
+            <br></br>
+            <span className='biggerfont centeronly'>Log in:</span>
             <input className='inputfield' onChange={(e) => setInput(e.target.value)} type="text" placeholder='infosys ID'></input>
-            <Link to={'/app'}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link>
+            <Link to={'/app'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID #{input}</button></Link>
             {/* <Link to={input}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link> */}
           </div>
           {/* <div>
