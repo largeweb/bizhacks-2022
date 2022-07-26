@@ -12,6 +12,7 @@ import Footer from "../components/Footer"
 import { db } from "../firebase"
 import Seat from "../components/Seat"
 import DoubleSeat from "../components/DoubleSeat"
+import floorPicture from "../images/floorPicture.png"
 
 function CubiclePage() {
 
@@ -76,6 +77,8 @@ function CubiclePage() {
 	  {/* <p>{building}</p> */}
 	  <div>Choose a Floor</div>
 	  <button disabled>Floor 00</button>
+	  <br></br>
+	  <img src={floorPicture}></img>
 	  <br></br>
 	  {/* <p>{floor}</p> */}
 

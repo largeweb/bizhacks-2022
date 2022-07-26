@@ -197,6 +197,7 @@ img {
   width: 80%;
   margin-left: 10%;
   border: 5px solid var(--border-color);
+  margin: 20px;
 }
 
 .loginnotice {
