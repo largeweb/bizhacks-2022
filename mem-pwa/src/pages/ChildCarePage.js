@@ -13,7 +13,7 @@ function ChildCarePage() {
  return (
   <div className='homediv'>
     <Navbar />
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
       Decide if Infosys Child Care is Right for You
     </div>
@@ -21,7 +21,7 @@ function ChildCarePage() {
     <div className='childcareTopDiv'>
       Check in your child here
     </div>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )

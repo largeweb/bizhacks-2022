@@ -42,10 +42,10 @@ function Login() {
             <span className='biggerfont centeronly'>Log in:</span>
             <input className='inputfield' onChange={(e) => setInput(e.target.value)} type="text" placeholder='infosys ID'></input>
             {input==='0'
-              ? <Link to={'/appadmin'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID 0 (special admin)</button></Link>
+              ? <Link to={'/appadmin'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID 0 (admin 🔑)</button></Link>
               : <Link to={'/app'}><button className={"switchButton loginbutton"} onClick={(e) => setUser(e.target.value)}>Login as ID #{input}</button></Link>
             }
-            <span className='loginnotice'>(Use id of 0 to login to Admin)</span>
+            <span className='loginnotice'>Use id of 0 to login to Admin</span>
             {/* <Link to={input}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link> */}
           </div>
           {/* <div>

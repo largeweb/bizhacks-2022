@@ -45,7 +45,7 @@ function CubiclePage() {
   <div className='homediv'>
       <Navbar />
 	  <p>Information about the Cubicle Page</p>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
 	  <p>Choose a Campus</p>
 	  <p>{campus}</p>
 	  <button onClick={setCampus}>Campus 1</button>

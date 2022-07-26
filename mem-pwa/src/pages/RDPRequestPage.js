@@ -13,12 +13,12 @@ function RDPRequestPage() {
  return (
   <div className='homediv'>
     <Navbar />
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
       Request RDP Access on Your Infosys Desktop
     </div>
     {/* <img className='childcareimage' src={child1}></img> */}
-    <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+    <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )

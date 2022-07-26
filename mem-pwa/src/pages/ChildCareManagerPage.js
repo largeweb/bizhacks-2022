@@ -13,7 +13,7 @@ function ChildCareManagerPage() {
  return (
   <div className='homediv'>
     <Navbar />
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
       Infosys Child Care Manager
     </div>
@@ -21,7 +21,7 @@ function ChildCareManagerPage() {
     <div className='childcareTopDiv'>
       Check ins...
     </div>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )

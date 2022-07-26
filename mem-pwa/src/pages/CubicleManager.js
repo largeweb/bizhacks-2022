@@ -88,7 +88,7 @@ function CubicleManager() {
   <div className='homediv'>
       <Navbar />
 	  <p>Information about the Cubicle Manager</p>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
 	  <br></br>
 		<button onClick={(e) => addCampus(e)}>Add Campus</button>
 		<button onClick={(e) => addBuilding(e)}>Add Building</button>

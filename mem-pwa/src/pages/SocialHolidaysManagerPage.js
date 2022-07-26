@@ -13,11 +13,11 @@ function SocialHolidaysManagerPage() {
  return (
   <div className='homediv'>
     <Navbar />
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
       Social Holidays Manager
     </div>
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )

@@ -13,12 +13,12 @@ function RDPManagerPage() {
  return (
   <div className='homediv'>
     <Navbar />
-	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
       View & Deal with Requests
     </div>
     {/* <img className='childcareimage' src={child1}></img> */}
-    <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
+    <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
   </div>
  )
