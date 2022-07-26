@@ -18,13 +18,13 @@ function HomeMenuUser() {
           {/* Scroll down list */}
           {/* Social cultural events, view flyers */}
           {/* Add a view participants */}
-          <button className={"menuButton"}>Social Holidays</button>
+          <Link to="/social"><button className={"menuButton"}>Social Holidays</button></Link>
+          <Link to="/rdp"><button className={"menuButton"}>Desktop RDP</button></Link>
           {/* Check Biz Hacks Notes */}
-          <button className={"menuButton"}>Enable RDP Desktop</button>
         </div>
         <div>
           {/* <button className={"menuButton"}>View Participants</button> */}
-          <button className={"menuButton"}>About this Web App</button>
+          <Link to="/about"><button className={"menuButton"}>About this Web App</button></Link>
         </div>
     </div>
   );

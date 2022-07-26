@@ -6,6 +6,12 @@ import App from './App';
 import CubiclePage from './pages/CubiclePage';
 import CubicleManager from './pages/CubicleManager';
 import ChildCarePage from './pages/ChildCarePage';
+import ChildCareManagerPage from './pages/ChildCareManagerPage';
+import SocialHolidaysPage from './pages/SocialHolidaysPage';
+import SocialHolidaysManagerPage from './pages/SocialHolidaysManagerPage';
+import RDPRequestPage from './pages/RDPRequestPage';
+import RDPManagerPage from './pages/RDPManagerPage';
+import AboutPage from './pages/AboutPage';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
@@ -18,6 +24,12 @@ root.render(
         <Route path="/cubicle" element={<CubiclePage/>} />
         <Route path="/cubiclemanager" element={<CubicleManager/>} />
         <Route path="/childcare" element={<ChildCarePage />} />
+        <Route path="/childcaremanager" element={<ChildCareManagerPage />} />
+        <Route path="/social" element={<SocialHolidaysPage />} />
+        <Route path="/socialmanager" element={<SocialHolidaysManagerPage />} />
+        <Route path="/rdp" element={<RDPRequestPage />} />
+        <Route path="/rdpmanager" element={<RDPManagerPage />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
     {/* <App /> */}
