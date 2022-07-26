@@ -15,13 +15,24 @@ import RDPManagerPage from './pages/RDPManagerPage';
 import AboutPage from './pages/AboutPage';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+// import useLocalStorage from "./hooks/useLocalStorage"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+// const [userid, setUserid] = useLocalStorage({id:''})
+
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App/>} />
+        {/* USE HOOKS TO DETERMINE WHERE / ROUTES TO */}
+
+        {/* {userId=='0'
+          : <Route path="/" element={<Login/>} />
+          ? <Route path="/" element={<Login/>} />
+        } */}
+
+        <Route path="/" element={<Login/>} />
         <Route path="/app" element={<App/>} />
         <Route path="/cubicle" element={<CubiclePage/>} />
         <Route path="/cubiclemanager" element={<CubicleManager/>} />

@@ -31,14 +31,15 @@ function Login() {
       {/* It makes sense to */}
       <div className="switchdiv">
           <div>
-            <p>🔴 Logged Out</p>
-            <input onChange={(e) => setInput(e.target.value)} type="text" placeholder='infosys ID'></input>
-            <Link to={input}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link>
+            <span className='biggerfont'>🔴 Logged Out</span>
+            <input className='inputfield' onChange={(e) => setInput(e.target.value)} type="text" placeholder='infosys ID'></input>
+            <Link to={'/app'}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link>
+            {/* <Link to={input}><button className={"switchButton"} onClick={(e) => setUser(e.target.value)}>Login to ID #{input}</button></Link> */}
           </div>
-          <div>
+          {/* <div>
             <p>🟢 Logged In</p>
             <button className={"switchButton"} onClick={(e) => setIsAdmin(true)}>Switch to Admin</button>
-          </div>
+          </div> */}
       </div>
       <Footer />
     </div>
