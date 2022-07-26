@@ -17,7 +17,7 @@ function ChildCarePage() {
     <div className='childcareTopDiv'>
       Decide if Infosys Child Care is Right for You
     </div>
-    <img className='childcareimage' src={child1}></img>
+    <img className='centeronly childcareimage' src={child1}></img>
     <div className='childcareTopDiv'>
       Check in your child here
     </div>

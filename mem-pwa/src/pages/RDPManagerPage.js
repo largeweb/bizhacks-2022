@@ -15,6 +15,8 @@ function RDPManagerPage() {
     <Navbar />
 	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
+      This page could be used to request to AHD or some team to go to someones computer and enable RDP for remote access to Infosys work
+      <hr></hr>
       View & Deal with Requests
     </div>
     {/* <img className='childcareimage' src={child1}></img> */}

@@ -15,7 +15,9 @@ function SocialHolidaysManagerPage() {
     <Navbar />
 	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <div className='childcareTopDiv'>
-      Social Holidays Manager
+      This is not fully developed yet
+      <hr></hr>
+      This page could be used for adding and removing events
     </div>
 	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />

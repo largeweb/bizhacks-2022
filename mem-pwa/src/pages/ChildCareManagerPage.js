@@ -19,7 +19,7 @@ function ChildCareManagerPage() {
     </div>
     {/* <img className='childcareimage' src={child1}></img> */}
     <div className='childcareTopDiv'>
-      Check ins...
+      This feature could be used for Check ins
     </div>
 	  <Link to="/appadmin"><button className='menuButton'>Go Back Home</button></Link>
     <Footer />
