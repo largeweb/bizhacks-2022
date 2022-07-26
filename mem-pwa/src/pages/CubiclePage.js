@@ -15,6 +15,9 @@ function CubiclePage() {
 
 	const [seats, setSeats] = useState([''])
 	const [input, setInput] = useState('')
+	const [campus, setCampus] = useState('')
+	const [building, setBuilding] = useState('')
+	const [floor, setFloor] = useState('')
 
   useEffect(() => {
     onSnapshot(collection(db,'seats'),(snapshot)=>{
@@ -37,12 +40,19 @@ function CubiclePage() {
 
 
 
+
  return (
   <div className='homediv'>
       <Navbar />
 	  <p>Information about the Cubicle Page</p>
 	  <Link to="/"><button className='menuButton'>Go Back Home</button></Link>
 	  <p>Choose a Campus</p>
+	  <p>{campus}</p>
+	  <button onClick={setCampus}>Campus 1</button>
+	  <p>Choose a Building</p>
+	  <p>{building}</p>
+	  <p>Choose a Floor</p>
+	  <p>{floor}</p>
 
 
 	<button variant="contained" onClick={addSeat}>Add Seat</button>
