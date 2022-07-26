@@ -206,3 +206,27 @@ img {
   margin-left: 10%;
   opacity: 0.8;
 }
+
+.infonotice {
+  color: blue;
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  opacity: 0.8;
+}
+
+.seatdiv {
+  width: 75px;
+  height: 75px;
+  background-color: red;
+  font-size: 10px;
+  margin: 5px;
+}
+
+.doubleseatdiv {
+  font-size: 10px;
+  background-color: red;
+  margin: 5px;
+  width: 150px;
+  height: 75px;
+}

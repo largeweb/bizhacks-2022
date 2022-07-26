@@ -10,18 +10,25 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import { db } from "../firebase"
+import Seat from "../components/Seat"
+import DoubleSeat from "../components/DoubleSeat"
 
 function CubiclePage() {
 
 	const [seats, setSeats] = useState([''])
+	const [doubleseats, setDoubleseats] = useState([''])
 	const [input, setInput] = useState('')
 	const [campus, setCampus] = useState('')
 	const [building, setBuilding] = useState('')
 	const [floor, setFloor] = useState('')
+	const [count, setCount] = useState(0)
 
   useEffect(() => {
     onSnapshot(collection(db,'seats'),(snapshot)=>{
       setSeats(snapshot.docs.map(doc => doc.data()))
+    })
+    onSnapshot(collection(db,'doubleseats'),(snapshot)=>{
+      setDoubleseats(snapshot.docs.map(doc => doc.data()))
     })
   },[input]);
   const addSeat=(e)=>{
@@ -36,6 +43,19 @@ function CubiclePage() {
     setInput('')
 	console.log(input)
   };
+  const addDouble=(e)=>{
+	console.log("Adding double seat")
+	console.log(input)
+    e.preventDefault();
+	addDoc(collection(db,'doubleseats'),{
+	   id:count,
+	   timestamp: serverTimestamp()
+	})
+	setCount(count+=1)
+    // setSeats([...seats,input]);
+    setInput('')
+	console.log(input)
+  };
 
 
 
@@ -46,18 +66,27 @@ function CubiclePage() {
       <Navbar />
 	  <p>Information about the Cubicle Page</p>
 	  <Link to="/app"><button className='menuButton'>Go Back Home</button></Link>
-	  <p>Choose a Campus</p>
-	  <p>{campus}</p>
-	  <button onClick={setCampus}>Campus 1</button>
-	  <p>Choose a Building</p>
-	  <p>{building}</p>
-	  <p>Choose a Floor</p>
-	  <p>{floor}</p>
+	  <div className='infonotice'>This page is not fully developed, but illustrates our concept for Employee Cubicle Selection</div>
+	  <div>Choose a Campus</div>
+	  <button disabled>Bangalore</button>
+	  {/* <p>{campus}</p> */}
+	  {/* <button onClick={setCampus}>Campus 1</button> */}
+	  <div>Choose a Building</div>
+	  <button disabled>Infosys AHD Building</button>
+	  {/* <p>{building}</p> */}
+	  <div>Choose a Floor</div>
+	  <button disabled>Floor 00</button>
+	  <br></br>
+	  {/* <p>{floor}</p> */}
 
 
-	<button variant="contained" onClick={addSeat}>Add Seat</button>
-		<ul>
-		{seats.map(({seat})=> <div /*seat={seat}*/className='menuButton' />)}
+	<button variant="contained" className='menuButton' onClick={addSeat}>Add Single Seat</button>
+	<button variant="contained" className='menuButton' onClick={addDouble}>Add Double Seat</button>
+		<ul style={{display:"inline"}}>
+		{seats.map(({seat})=> <Seat style={{display:"inline"}}/*seat={seat}*/key={"single"} className='menuButton' />)}
+		</ul>
+		<ul style={{display:"inline"}}>
+		{doubleseats.map(({doubleseat})=> <DoubleSeat style={{display:"inline"}}/*seat={seat}*/className='menuButton' />)}
 		</ul>
 
 

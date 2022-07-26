@@ -2,7 +2,7 @@ import {db} from '../firebase.js';
 import { doc, deleteDoc } from "firebase/firestore";
 // import { redirect } from 'express/lib/response';
 
-const Seat=()=>{
+const DoubleSeat=({key})=>{
 
     return (
         // <List className="campus__list">
@@ -11,7 +11,7 @@ const Seat=()=>{
         // <ListItemText primary={arr.item.campus} secondary={arr.item.campus} />
         // </ListItem>
         // </List>
-        <div className='seatdiv'>
+        <div className='doubleseatdiv'>
             {/* <div fontSize="large" style={{opacity:0.7, backgroundColor:"red"}} onClick={() => {deleteDoc(doc(db,'campuses',key))}} /> */}
                 <div>UNTAKEN</div>
                 <div>Date of Leave: 8/23/2022</div>
@@ -19,4 +19,4 @@ const Seat=()=>{
         </div>
     )
 };
-export default Seat;
+export default DoubleSeat;
